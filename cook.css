@@ -1,0 +1,65 @@
+/*
+ * @name:煮牛肉;
+ * @author:tqtan;
+ * @site:http://targetkiller.net/;
+ * @date:2014/8/13;
+*/
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,a,address,
+em, img, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td,i,b,s {
+    margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%;font-family:Helvetica,'microsoft yahei',Arial,sans-serif;
+}
+ul,ol{list-style: none}
+a img { border:none;vertical-align: top; }
+a {text-decoration: none;}
+button {overflow:visible;padding:0;margin:0;border:0 none;background-color:transparent;}
+button::-moz-focus-inner { padding:0;}
+textarea,input{background:none;padding:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-appearance:none;}
+input[type=password] {-webkit-text-security:disc;}
+textarea:focus,input:focus,button:focus{outline:none;}
+body {word-wrap:break-word;}
+* {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body{margin: 0;background-color: #6f1e1e;}
+.hide{display: none!important;}
+
+.container{width: 100%;height: 100%;background-color: #6f1e1e;position: relative;}
+.container-low{margin-top: -44px;overflow: hidden;height: 524px;}
+
+.transfer{width: 100%;height: 165px;background-image: url(img/transfer.32.png);position: absolute;top: 42px;z-index: 19;}
+.plate-wrap{width: 100%;height: 165px;position: absolute;top: 34px;overflow:hidden;}
+.plate-list{position: absolute;width: 462px;height: 94px;text-align: center;left: 50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+.plate{width: 89px;height: 94px;background-image: url(img/slice/plate.32.png);background-position: no-repeat;display: inline-block;}
+
+.center{width: 320px;position: relative;text-align: center;letter-spacing: -5px;font-size: 0;height: 568px;left: 50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+.pan-wrap{position: absolute;top: 212px;width: 320px;height: 294px;background-image: url(img/slice/panel.32.png);background-position: no-repeat;}
+.pan-wrap .pan{position: absolute;width: 130px;height: 219px;background-image: url(img/slice/pan.32.png);background-position: no-repeat;}
+.pan-wrap .pan1{top: -20px;left: -8px;transform:rotate(50deg);-webkit-transform:rotate(50deg);}
+.pan-wrap .pan2{top: -20px;left: 197px;transform:rotate(-50deg);-webkit-transform:rotate(-50deg);}
+.pan-wrap .pan3{top: 130px;left: 29px;}
+.pan-wrap .pan4{top: 130px;left: 164px;}
+
+.beef{display: inline-block;width: 75px;height: 72px;background-image: url(img/slice/beef-normal.32.png);position: absolute;}
+.water{background-image: url(img/slice/beef-water.32.png);}
+.wine{background-image: url(img/slice/beef-wine.32.png);}
+.done{background-image: url(img/slice/beef-done.32.png);}
+.beef1{left: 57px;top: 27px;}
+.beef2{left: 194px;top: 27px;}
+.beef3{left: 57px;top: 162px;}
+.beef4{left: 194px;top: 162px;}
+
+.welcome-bottom{position: absolute;top: 414px;width: 100%;height: 100%;background-color: #000;}
+
+.welcome{width: 320px;height: 568px;background-image: url(img/welcome.32.png);position: absolute;top: 0;left: 50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+.welcome .btn{width: 150px;height: 28px;display: block;position: absolute;top: 447px;}
+.welcome .btn-start{left: 36px;}
+.welcome .btn-rule{left: 269px;}
+
+.end{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.8);z-index: 20}
+.end .end-bg{background-image: url(img/end.32.png);width: 320px;height: 568px;position: relative;margin: 0 auto;}
+.end .btn{width: 106px;height: 38px;display: block;position: absolute;top: 402px;}
+.end .btn-again{background-image: url(img/slice/btn-again.32.png);left: 45px;}
+.end .btn-share{background-image: url(img/slice/btn-share.32.png);left: 170px;}
+.end .btn-focus{background-image: url(img/slice/btn-focus.32.png);width: 175px;height: 40px;position: absolute;left: 74px;top: 468px;}
+
+.share{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.8);z-index: 21}
+.share .share-bg{background-image: url(img/share.32.png);width: 320px;height: 568px;position: relative;margin: 0 auto;}
