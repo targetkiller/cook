@@ -5,6 +5,7 @@
  * @date:2014/8/13;
 */
 
+// 公用变量
 var score = 0;
 var totalTime = 15;
 var time = totalTime;
@@ -25,6 +26,7 @@ if(bHeight<481){
 // 让欢迎动画下方为黑色
 $('.welcome-bottom').height(bHeight-414);
 
+// 封装方法
 function ranNum(){
 	return parseInt(Math.random()*num);
 }
@@ -54,26 +56,9 @@ function startGame(){
 		var ev = ranEvent();
 		$this.addClass(ev);
 	},occurTime);
-
-	// 开启时间计时器
-	// timeInter = setInterval(function(){
-	// 	if(time < 8 && time > 3){
-	// 		occurTime = 250;
-	// 	}
-	// 	else if(time < 3 && time > 0){
-	// 		$('#loader').css('background-color','red');
-	// 		if(navigator.vibrate){
-	// 			navigator.vibrate(3000);
-	// 		}
-	// 	}
-	// 	else if(time < 0){
-	// 		gameover();
-	// 	}
-	// 	time -= time_cut;
-	// 	updateTime();
-
-	// },10);
 }
+
+// 游戏操作监听
 
 document.ontouchmove = function(event){
     event.preventDefault();
@@ -100,8 +85,22 @@ $('.beef').bind('swipeRight',function(){
 	}
 });
 
+// 按钮监听
+
 $('.btn-start').bind('tap',function(){
 	startGame();
+});
+
+$('.btn-rule').bind('tap',function(){
+	$('.welcome').addClass('hide');
+	$('.welcome-bottom').addClass('hide');
+	$('.rule').removeClass('hide');
+});
+
+$('.rule').bind('tap',function(){
+	$('.welcome').removeClass('hide');
+	$('.welcome-bottom').removeClass('hide');
+	$(this).addClass('hide');
 });
 
 $('.btn-share').bind('tap',function(){
@@ -117,7 +116,23 @@ $('.share').bind('tap',function(){
 	$('.share').addClass('hide');
 });
 
+// drag&drop
+$('.beef').draggable({
+	start: function(){
+	},
+	stop: function(){
+	}
+});
+
+$('.plate').droppable({
+    drop: function (e, dragEl, dropEl) {
+      // dropEl.css('background-color', ' #168a3f');
+      return true;
+    }
+});
+
 // 临时测试代码，最后去掉
 $('.plate').bind('tap',function(){
 	$('.end').removeClass('hide');
 });
+
