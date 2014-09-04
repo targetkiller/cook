@@ -1,2 +1,10 @@
+.beef-done{width:75px;height:72px;background-image:url(img/beef-done.32.png);_background-image:url(img/beef-done.ie6.png);}
+.beef-normal{width:75px;height:72px;background-image:url(img/beef-normal.32.png);_background-image:url(img/beef-normal.ie6.png);}
+.beef-water{width:75px;height:72px;background-image:url(img/beef-water.32.png);_background-image:url(img/beef-water.ie6.png);}
+.beef-wine{width:75px;height:72px;background-image:url(img/beef-wine.32.png);_background-image:url(img/beef-wine.ie6.png);}
+.end{width:320px;height:568px;background-image:url(img/end.32.png);_background-image:url(img/end.ie6.png);}
 .rule{width:320px;height:568px;background-image:url(img/rule.32.png);_background-image:url(img/rule.ie6.png);}
-#CssGaga{content:"140814010355,tqn,326"}
+.share{width:320px;height:568px;background-image:url(img/share.32.png);_background-image:url(img/share.ie6.png);}
+.transfer{width:78px;height:165px;background-image:url(img/transfer.32.png);_background-image:url(img/transfer.ie6.png);}
+.welcome{width:320px;height:568px;background-image:url(img/welcome.32.png);_background-image:url(img/welcome.ie6.png);}
+#CssGaga{content:"140829152717,tqn,326"}
